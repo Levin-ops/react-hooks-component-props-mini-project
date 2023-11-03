@@ -2,9 +2,11 @@ import React from "react";
 
 
 function Header(props) {
+
+    // console.log(props)
     return (
       <header>
-        <h1>{props.blogName}</h1>
+        <h1>{props.name}</h1>
       </header>
     );
   }
