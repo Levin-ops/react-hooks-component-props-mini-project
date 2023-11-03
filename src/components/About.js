@@ -1,18 +1,14 @@
 import React from "react";
 
-function About(imageUrl, aboutText){
-
-    const defaultURL = `https://via.placeholder.com/215`;
-
+function About(props) {
+    const { imageSrc, aboutText } = props;
+  
     return (
-        <aside>
-            <img
-            src={imageUrl || defaultURL}
-            alt="blog logo"
-            />
-            <p>{aboutText}</p>
-        </aside>
-    )
-}
+      <aside>
+        <img src={imageSrc || "https://via.placeholder.com/215"} alt="blog logo" />
+        <p>{aboutText}</p>
+      </aside>
+    );
+  }
 
-export default About
+export default About;
